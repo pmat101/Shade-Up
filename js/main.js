@@ -10,6 +10,8 @@ function randompickerbtn() {
 }
 
 function hexFindbtn() {
+    let hexC = document.getElementById("hexInput").value;
+    document.getElementById("color-box").style.backgroundColor = hexC;
 }
 
 function RGBFindbtn() {
