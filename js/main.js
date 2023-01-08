@@ -13,6 +13,10 @@ function hexFindbtn() {
 }
 
 function RGBFindbtn() {
+    let red = document.getElementById("RInput").value;
+    let green = document.getElementById("GInput").value;
+    let blue = document.getElementById("BInput").value;
+    document.getElementById("rgb-color-box").style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
 }
 
 function RangeSelector() {
