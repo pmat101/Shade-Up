@@ -22,6 +22,10 @@ function RGBFindbtn() {
 }
 
 function RangeSelector() {
+    let rRange = document.getElementById("RrInput").value;
+    let gRange = document.getElementById("GrInput").value;
+    let bRange = document.getElementById("BrInput").value;
+    document.getElementById("range-color-box").style.backgroundColor = `rgb(${rRange}, ${gRange}, ${bRange})`;
 }
 
 // hex to rgb converter
