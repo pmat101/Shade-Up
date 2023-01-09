@@ -34,6 +34,18 @@ String.prototype.convertToRGB = function () {
 };
 
 function hexConvbtn() {
+    let hexv = document.getElementById("hexCInp").value;
+    let r, g, b;
+    if (hexv.length == 3) {
+        r = parseInt(hexv.slice(0, 1) + hexv.slice(0, 1), 16);
+        g = parseInt(hexv.slice(1, 2) + hexv.slice(1, 2), 16);
+        b = parseInt(hexv.slice(2, 3) + hexv.slice(2, 3), 16);
+    } else {
+        r = parseInt(hexv.slice(0, 2), 16);
+        g = parseInt(hexv.slice(2, 4), 16);
+        b = parseInt(hexv.slice(4, 6), 16);
+    }
+    document.getElementById("hexCOut").innerText = `rgb(${r}, ${g}, ${b})`;
 }
 
 function rgbConvbtn() {
